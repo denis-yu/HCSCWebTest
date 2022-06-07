@@ -23,7 +23,7 @@ class HPMainPage:
         address.click()
         plDropdown = self.driver.find_element_by_xpath("//a[@id='planTypeDropdown']/span")
         plDropdown.click()
-        plSelection = self.driver.find_element_by_xpath("//div[@id='changeProductLine']/div/ul/li[4]/a")
+        plSelection = self.driver.find_element_by_xpath("//*[@class='c-home-plantype__dropdown-item']/a[contains(text(),'Medicare Insurance')]")
         plSelection.click()
         findPlan = self.driver.find_element_by_id("findPlans")
         findPlan.click()

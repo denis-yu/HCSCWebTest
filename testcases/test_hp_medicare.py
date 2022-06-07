@@ -28,23 +28,7 @@ class Test_HP_Medicare():
         HPMainPage(self.driver).toProductLine
         HPMedicareQuotePage(self.driver).filterPlan
         HPMedicareQuotePage(self.driver).comparePlans
-    #     driver = self.driver
-    #     driver.get("https://pengujian.healthpocket.com/")
-    #     driver.find_element_by_id("location").click()
-    #     driver.find_element_by_id("location").clear()
-    #     driver.find_element_by_id("location").send_keys("60601")
-    #     driver.find_element_by_link_text("60601 - Cook County, IL").click()
-    #     driver.find_element_by_xpath("//a[@id='planTypeDropdown']/span").click()
-    #     driver.find_element_by_xpath("//div[@id='changeProductLine']/div/ul/li[4]/a").click()
-    #     driver.find_element_by_id("findPlans").click()
-    #     driver.find_element_by_xpath("//div[@id='js-census-bar']/div/div/div[2]/div[2]/ul/li[4]/button").click()
-    #     driver.find_element_by_xpath("//div[@id='js-filter-more-popover']/form/div/div/ul/li[2]/div/label").click()
-    #     driver.find_element_by_xpath("//div[@id='js-filter-more-popover']/form/button[2]").click()
-    #     driver.find_element_by_name("compare").click()
-    #     driver.find_element_by_xpath("//div[@id='js-plans']/ul/li[2]/div/div[2]/div[2]/input").click()
-    #     driver.find_element_by_xpath("//div[@id='js-plans']/ul/li[3]/div/div[2]/div[2]/input").click()
-    #     driver.find_element_by_xpath("//div[@id='save-to-compare-plan-header']/div[3]/a/span").click()
-    #     driver.find_element_by_xpath("//div[@id='savedPlansPlanContainer']/table/tbody/tr[6]/td[2]/a/span").click()
+
     #     # ERROR: Caught exception [ERROR: Unsupported command [selectWindow | win_ser_1 | ]]
     #     driver.find_element_by_xpath("//div[@id='js-details']/div/div/div/div[4]/div/div/div/div/div/h1").click()
     #     planName = driver.find_element_by_xpath("//div[@id='js-details']/div/div/div/div[4]").text
@@ -78,6 +62,3 @@ class Test_HP_Medicare():
     def teardown(self):
         self.driver.quit()
 
-
-if __name__ == "__main__":
-            pytest.main(['-s', '-r', 'test_hp_medicare.py'])

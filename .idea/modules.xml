@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/HPWebTest.iml" filepath="$PROJECT_DIR$/.idea/HPWebTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/HCWebTest.iml" filepath="$PROJECT_DIR$/.idea/HCWebTest.iml" />
     </modules>
   </component>
 </project>
