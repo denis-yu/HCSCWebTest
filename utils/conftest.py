@@ -8,7 +8,8 @@ import pytest
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
-driver: webdriver = None
+global driver
+# driver: webdriver = None
 
 
 @pytest.fixture(scope='session', autouse=True)
